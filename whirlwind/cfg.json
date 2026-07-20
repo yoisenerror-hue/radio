@@ -1,0 +1,9 @@
+{
+        "playlist" : [
+        { "title": "Whirlwind", "src": "./whirlwind/whirlwind.mp3"},
+        { "title": "ColdFlow", "src": "./whirlwind/coldflow.mp3" },
+        { "title": "FlashGale", "src": "./whirlwind/flashgale.mp3"}
+        ],
+        "jacket":"./whirlwind/jacket.png"
+        
+}
