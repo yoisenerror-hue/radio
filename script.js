@@ -34,11 +34,6 @@ function setupVisualizer(){
     dataArray = new Uint8Array(bufferLength);
 }
 
-if (!isContextInitialized) {
-        setupVisualizer();
-        isContextInitialized = true;
-}
-
 async function loadAlbumlist() {
   const response = await fetch('./albums.json'); // 同ディレクトリ内のファイル名を指定
   const albumlist = await response.json();
@@ -92,6 +87,11 @@ function selectAlbum(album, index){
 }
 
 function playTrack(track, index){
+    
+    if (!isContextInitialized) {
+            setupVisualizer();
+            isContextInitialized = true;
+    }
     document.querySelectorAll('.track-item').forEach((item, idx) => {
         item.classList.toggle('active', idx === index);
     });
@@ -184,37 +184,37 @@ function draw(){
     ctx.strokeStyle = '#0f0f0f';
     ctx.strokeText(name, 70, 160)
 
-    if (analyser) {
-        analyser.getByteFrequencyData(dataArray);
-    }
-
-    // 音データをもとに緑色の波形（バー）を描画
-    const barAreaWidth = 200;
-    const offsetx = 150;
-    const offsety = 50;
-    const barWidth = (barAreaWidth / dataArray.length) * 1.5;
-    let barHeight;
-    let x = 0;
-
+    if (!isContextInitialized){
+        if (analyser) {
+            analyser.getByteFrequencyData(dataArray);
+        }
     
-
-    for (let i = 0; i < dataArray.length; i++) {
-        barHeight = dataArray[i] * 0.5; // 音の大きさに合わせて高さを計算
-
-        ctx.fillStyle = `rgb(${barHeight + 100}, ${barHeight + 100}, ${barHeight + 100})`;
-        
-        // 下から上に向かってバーを描画
-        ctx.fillRect(x+offsetx, height - barHeight -offsety, barWidth - 2, barHeight);
-        ctx.fillStyle = gradient;
-        ctx.fillRect(x+offsetx, height-offsety, barWidth - 2, barHeight/4);
-
-
-        x += barWidth;
+        // 音データをもとに緑色の波形（バー）を描画
+        const barAreaWidth = 200;
+        const offsetx = 150;
+        const offsety = 50;
+        const barWidth = (barAreaWidth / dataArray.length) * 1.5;
+        let barHeight;
+        let x = 0;
+    
+        for (let i = 0; i < dataArray.length; i++) {
+            barHeight = dataArray[i] * 0.5; // 音の大きさに合わせて高さを計算
+    
+            ctx.fillStyle = `rgb(${barHeight + 100}, ${barHeight + 100}, ${barHeight + 100})`;
+            
+            // 下から上に向かってバーを描画
+            ctx.fillRect(x+offsetx, height - barHeight -offsety, barWidth - 2, barHeight);
+            ctx.fillStyle = gradient;
+            ctx.fillRect(x+offsetx, height-offsety, barWidth - 2, barHeight/4);
+    
+    
+            x += barWidth;
+        }
+        }
+    
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(offsetx, height-offsety, barAreaWidth, 2);
     }
-
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(offsetx, height-offsety, barAreaWidth, 2);
-
     requestAnimationFrame(draw);
 }
 
