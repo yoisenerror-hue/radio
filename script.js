@@ -210,7 +210,6 @@ function draw(){
     
             x += barWidth;
         }
-        }
     
         ctx.fillStyle = '#ffffff';
         ctx.fillRect(offsetx, height-offsety, barAreaWidth, 2);
