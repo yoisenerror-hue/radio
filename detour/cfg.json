@@ -1,0 +1,7 @@
+{
+        "playlist" : [
+        { "title": "AwkwardWalkway", "src": "./detour/awkwardwalkway.mp3" }
+        ],
+        "jacket":"./detour/jacket.png"
+        
+}
