@@ -184,7 +184,7 @@ function draw(){
     ctx.strokeStyle = '#0f0f0f';
     ctx.strokeText(name, 70, 160)
 
-    if (!isContextInitialized){
+    if (isContextInitialized){
         if (analyser) {
             analyser.getByteFrequencyData(dataArray);
         }
