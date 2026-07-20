@@ -3,6 +3,8 @@ body{
 }
 .selector{
     display:flex;
+    margin: 0;
+    justify-content: center; /* 横中央 */
 }
 ul{
     list-style: none;
