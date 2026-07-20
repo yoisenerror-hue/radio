@@ -97,6 +97,7 @@ function playTrack(track, index){
     });
     name = track.title;
     audio.src = track.src;
+    audio.play();
 }
 
 class floatblock{
