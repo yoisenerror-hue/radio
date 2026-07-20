@@ -1,0 +1,10 @@
+{
+        "playlist" : [
+        { "title": "BronzeDusk", "src": "./daylight/bronzedusk.mp3" },
+        { "title": "WindRing", "src": "./daylight/windring.mp3" },
+        { "title": "FrozenDirt", "src": "./daylight/frozendirt.mp3" },
+        { "title": "SnowField", "src": "./daylight/snowfield.mp3" }
+        ],
+        "jacket":"./daylight/jacket.png"
+        
+}
