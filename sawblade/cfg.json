@@ -1,0 +1,9 @@
+{
+        "playlist" : [
+        { "title": "Sawblade", "src": "./sawblade/sawblade.mp3" },
+        { "title": "Rust", "src": "./sawblade/rust.mp3" },
+        { "title": "Transmission", "src": "./sawblade/transmission.mp3" }
+        ],
+        "jacket":"./sawblade/sawblade.png"
+        
+}
