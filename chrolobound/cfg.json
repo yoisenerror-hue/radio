@@ -1,0 +1,9 @@
+{
+        "playlist" : [
+        { "title": "Branch", "src": "./chrolobound/branch.mp3" },
+        { "title": "Leaves", "src": "./chrolobound/leaves.mp3" },
+        { "title": "Trunk", "src": "./chrolobound/trunk.mp3" }
+        ],
+        "jacket":"./chrolobound/jacket.png"
+        
+}
