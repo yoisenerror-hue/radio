@@ -1,0 +1,7 @@
+[
+        { "title": "Daylight", "src": "daylight/cfg.json" ,"jacket":"./daylight/jacket.png"},
+        { "title": "Chrolobound", "src": "chrolobound/cfg.json" ,"jacket":"./chrolobound/jacket.png"},
+        { "title": "Sawblade", "src": "sawblade/cfg.json" ,"jacket":"./sawblade/jacket.png"},
+        { "title": "Whirlwind", "src": "whirlwind/cfg.json" ,"jacket":"./whirlwind/jacket.png"},
+        { "title": "Detour", "src": "detour/cfg.json" ,"jacket":"./detour/jacket.png"}
+]

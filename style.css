@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(1, 1, 126);
+}
+.selector{
+    display:flex;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+li{
+    background-color: black;
+    color:#f0f0f0;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow-y: auto;
+    transition: background 0.2s;
+}
+li:hover{background-color: #6f6f6f; }
+li.active { background-color: #007BFF; color: white; }
+canvas {
+    border-radius: 4px;
+}
+audio {
+    width: 400px;
+}
