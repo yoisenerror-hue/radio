@@ -1,7 +1,8 @@
 {
         "playlist" : [
         { "title": "AwkwardWalkway", "src": "./detour/awkwardwalkway.mp3" },
-        { "title": "Topaz", "src": "./detour/topaz.mp3" }
+        { "title": "Topaz", "src": "./detour/topaz.mp3" },
+        { "title": "Metrophilia", "src": "./detour/metrophilia.mp3" }
         ],
         "jacket":"./detour/jacket.png"
         
