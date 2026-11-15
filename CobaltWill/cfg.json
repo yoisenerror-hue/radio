@@ -1,0 +1,7 @@
+{
+        "playlist" : [
+        { "title": "IndigoLyever", "src": "./chrolobound/IndigoLyever.mp3" }
+        ],
+        "jacket":"./CobaltWill/jacket.png"
+        
+}
