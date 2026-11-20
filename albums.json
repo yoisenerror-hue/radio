@@ -5,5 +5,5 @@
         { "title": "Whirlwind", "src": "whirlwind/cfg.json" ,"jacket":"./whirlwind/jacket.png"},
         { "title": "Detour", "src": "detour/cfg.json" ,"jacket":"./detour/jacket.png"},
         { "title": "CobaltWill", "src": "CobaltWill/cfg.json" ,"jacket":"./CobaltWill/jacket.png"},
-        { "title": "Metalaxia", "src": "Metalaxia/cfg.json" ,"jacket":"./Metalaxia/jacket.png"},
+        { "title": "Metalaxia", "src": "Metalaxia/cfg.json" ,"jacket":"./Metalaxia/jacket.png"}
 ]
