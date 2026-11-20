@@ -1,6 +1,6 @@
 {
         "playlist" : [
-        { "title": "Branch", "src": "./Metalaxia/quill_xor_blade.mp3" }
+        { "title": "QuillXorBlade", "src": "./Metalaxia/quill_xor_blade.mp3" }
         ],
         "jacket":"./Metalaxia/jacket.png"
         
